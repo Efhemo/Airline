@@ -4,6 +4,7 @@ import android.util.Log
 import com.efhems.airlines.database.FootballDatabase
 import com.efhems.airlines.network.Network
 import com.efhems.airlines.util.extractAirports
+import com.efhems.airlines.util.extractSchedule
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import retrofit2.HttpException
@@ -45,17 +46,27 @@ class Repository(private val database: FootballDatabase) {
                 null
             }
         }
-
     }
 
-    suspend fun schedules() =
+    suspend fun schedules(origin: String, destinatin: String, fraomDate: String) =
 
         withContext(Dispatchers.IO){
 
             try {
+                val response = Network.service.schedules("Bearer $token", origin, destinatin, fraomDate, 0)
 
+                if (response.isSuccessful && response.body() != null) {
+
+                    val body = response.body()!!.string()
+                    val schedules = extractSchedule(body)
+                    schedules
+                } else {
+                    Log.i(TAG, "size is empty " + response.code())
+                    null
+                }
             }catch (e: Exception){
-
+                Log.i(TAG, "size is empty exception" + e.message)
+                null
             }
 
         }

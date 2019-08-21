@@ -4,6 +4,7 @@
     <string name="airport_origin">Airport Origin</string>
     <string name="airport_destination">Airport Destination</string>
     <string name="schedules">Schedules</string>
+    <string name="days_of_operation">Days of Operation:</string>
 
 
     <string-array name="location">

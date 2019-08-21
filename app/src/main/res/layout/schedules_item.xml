@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:padding="@dimen/dimen_8"
+        android:layout_margin="@dimen/dimen_8"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/time"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            tools:text="37 Min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/flight_indicate"
+            android:padding="@dimen/dimen_4"
+            android:layout_marginTop="@dimen/dimen_4"
+            app:layout_constraintTop_toBottomOf="@id/time"
+            app:layout_constraintLeft_toLeftOf="@id/time"
+            android:text="Flight Number:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/flight_no"
+            android:padding="@dimen/dimen_4"
+            app:layout_constraintTop_toTopOf="@id/flight_indicate"
+            app:layout_constraintBottom_toBottomOf="@id/flight_indicate"
+            app:layout_constraintLeft_toRightOf="@id/flight_indicate"
+            android:textColor="@android:color/black"
+            tools:text="345"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/days_indicate"
+            android:padding="@dimen/dimen_4"
+            android:layout_marginTop="@dimen/dimen_4"
+            app:layout_constraintTop_toBottomOf="@id/flight_indicate"
+            app:layout_constraintLeft_toLeftOf="@id/time"
+            android:text="@string/days_of_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginRight="@dimen/dimen_8"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/flight_indicate"
+            app:layout_constraintBottom_toBottomOf="@id/days_indicate"
+            app:srcCompat="@drawable/airplane_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dimen_8"/>
+
+    <!--Days of operation-->
+    <TextView
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginBottom="@dimen/dimen_2"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:text="Sun"
+            android:paddingLeft="@dimen/dimen_4"
+            android:paddingRight="@dimen/dimen_4"
+            android:id="@+id/Sun"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/days_indicate"
+            android:background="@drawable/border_layer_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+
+            android:text="Mon"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/dimen_4"
+            android:paddingRight="@dimen/dimen_4"
+            android:id="@+id/mon"
+            android:layout_marginStart="@dimen/dimen_4"
+            app:layout_constraintLeft_toRightOf="@id/Sun"
+            app:layout_constraintTop_toTopOf="@id/Sun"
+            app:layout_constraintBottom_toBottomOf="@id/Sun"
+            android:background="@drawable/border_layer_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_4"/>
+
+    <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:text="Tue"
+            android:paddingLeft="@dimen/dimen_4"
+            android:paddingRight="@dimen/dimen_4"
+            android:id="@+id/tue"
+            android:layout_marginStart="@dimen/dimen_8"
+            app:layout_constraintLeft_toRightOf="@id/mon"
+            app:layout_constraintTop_toTopOf="@id/mon"
+            app:layout_constraintBottom_toBottomOf="@id/mon"
+            android:background="@drawable/border_layer_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"/>
+
+    <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:text="Wed"
+            android:paddingLeft="@dimen/dimen_4"
+            android:paddingRight="@dimen/dimen_4"
+            android:id="@+id/wed"
+            android:layout_marginStart="@dimen/dimen_8"
+            app:layout_constraintLeft_toRightOf="@id/tue"
+            app:layout_constraintTop_toTopOf="@id/tue"
+            app:layout_constraintBottom_toBottomOf="@id/tue"
+            android:background="@drawable/border_layer_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"/>
+
+    <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:text="Thu"
+            android:paddingLeft="@dimen/dimen_4"
+            android:paddingRight="@dimen/dimen_4"
+            android:id="@+id/thu"
+            android:layout_marginStart="@dimen/dimen_8"
+            app:layout_constraintLeft_toRightOf="@id/wed"
+            app:layout_constraintTop_toTopOf="@id/wed"
+            app:layout_constraintBottom_toBottomOf="@id/wed"
+            android:background="@drawable/border_layer_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"/>
+
+    <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:text="Fri"
+            android:paddingLeft="@dimen/dimen_4"
+            android:paddingRight="@dimen/dimen_4"
+            android:id="@+id/fri"
+            android:layout_marginStart="@dimen/dimen_8"
+            app:layout_constraintLeft_toRightOf="@id/thu"
+            app:layout_constraintTop_toTopOf="@id/thu"
+            app:layout_constraintBottom_toBottomOf="@id/thu"
+            android:background="@drawable/border_layer_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"/>
+
+    <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:text="Sat"
+            android:paddingLeft="@dimen/dimen_4"
+            android:paddingRight="@dimen/dimen_4"
+            android:id="@+id/sat"
+            android:layout_marginStart="@dimen/dimen_8"
+            app:layout_constraintLeft_toRightOf="@id/fri"
+            app:layout_constraintTop_toTopOf="@id/fri"
+            app:layout_constraintBottom_toBottomOf="@id/fri"
+            android:background="@drawable/border_layer_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"/>
+
+
+</androidx.constraintlayout.ConstraintLayout>
