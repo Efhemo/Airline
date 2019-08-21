@@ -1,0 +1,789 @@
+<resources>
+    <string name="app_name">Airlines</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="airport_origin">Airport Origin</string>
+    <string name="airport_destination">Airport Destination</string>
+    <string name="schedules">Schedules</string>
+
+
+    <string-array name="location">
+        <item>Abadam</item>
+        <item>Abaji</item>
+        <item>Abak</item>
+        <item>Abakaliki</item>
+        <item>Aba North</item>
+        <item>Aba South</item>
+        <item>Abeokuta North</item>
+        <item>Abeokuta South</item>
+        <item>Abi</item>
+        <item>Aboh Mbaise</item>
+        <item>Abua/Odual</item>
+        <item>Abuja</item>
+        <item>Adavi</item>
+        <item>Ado Ekiti</item>
+        <item>Ado-Odo/Ota</item>
+        <item>Afijio</item>
+        <item>Afikpo North</item>
+        <item>Afikpo South (Edda)</item>
+        <item>Agaie</item>
+        <item>Agatu</item>
+        <item>Agwara</item>
+        <item>Agege</item>
+        <item>Aguata</item>
+        <item>Ahiazu Mbaise</item>
+        <item>Ahoada East</item>
+        <item>Ahoada West</item>
+        <item>Ajaokuta</item>
+        <item>Ajeromi-Ifelodun</item>
+        <item>Ajingi</item>
+        <item>Akamkpa</item>
+        <item>Akinyele</item>
+        <item>Akko</item>
+        <item>Akoko-Edo</item>
+        <item>Akoko North-East</item>
+        <item>Akoko North-West</item>
+        <item>Akoko South-West</item>
+        <item>Akoko South-East</item>
+        <item>Akpabuyo</item>
+        <item>Akuku-Toru</item>
+        <item>Akure North</item>
+        <item>Akure South</item>
+        <item>Akwanga</item>
+        <item>Albasu</item>
+        <item>Aleiro</item>
+        <item>Alimosho</item>
+        <item>Alkaleri</item>
+        <item>Amuwo-Odofin</item>
+        <item>Anambra East</item>
+        <item>Anambra West</item>
+        <item>Anaocha</item>
+        <item>Andoni</item>
+        <item>Aninri</item>
+        <item>Aniocha North</item>
+        <item>Aniocha South</item>
+        <item>Anka</item>
+        <item>Ankpa</item>
+        <item>Apa</item>
+        <item>Apapa</item>
+        <item>Ado</item>
+        <item>Ardo Kola</item>
+        <item>Arewa Dandi</item>
+        <item>Argungu</item>
+        <item>Arochukwu</item>
+        <item>Asa</item>
+        <item>Asari-Toru</item>
+        <item>Askira/Uba</item>
+        <item>Atakunmosa East</item>
+        <item>Atakunmosa West</item>
+        <item>Atiba</item>
+        <item>Atisbo</item>
+        <item>Augie</item>
+        <item>Auyo</item>
+        <item>Awe</item>
+        <item>Awgu</item>
+        <item>Awka North</item>
+        <item>Awka South</item>
+        <item>Ayamelum</item>
+        <item>Aiyedaade</item>
+        <item>Aiyedire</item>
+        <item>Babura</item>
+        <item>Badagry</item>
+        <item>Bagudo</item>
+        <item>Bagwai</item>
+        <item>Bakassi</item>
+        <item>Bokkos</item>
+        <item>Bakori</item>
+        <item>Bakura</item>
+        <item>Balanga</item>
+        <item>Bali</item>
+        <item>Bama</item>
+        <item>Bade</item>
+        <item>Barkin Ladi</item>
+        <item>Baruten</item>
+        <item>Bassa</item>
+        <item>Batagarawa</item>
+        <item>Batsari</item>
+        <item>Bauchi</item>
+        <item>Baure</item>
+        <item>Bayo</item>
+        <item>Bebeji</item>
+        <item>Bekwarra</item>
+        <item>Bende</item>
+        <item>Biase</item>
+        <item>Bichi</item>
+        <item>Bida</item>
+        <item>Billiri</item>
+        <item>Bindawa</item>
+        <item>Binji</item>
+        <item>Biriniwa</item>
+        <item>Birnin Gwari</item>
+        <item>Birnin Kebbi</item>
+        <item>Birnin Kudu</item>
+        <item>Birnin Magaji/Kiyaw</item>
+        <item>Biu</item>
+        <item>Bodinga</item>
+        <item>Bogoro</item>
+        <item>Boki</item>
+        <item>Boluwaduro</item>
+        <item>Bomadi</item>
+        <item>Bonny</item>
+        <item>Borgu</item>
+        <item>Boripe</item>
+        <item>Bursari</item>
+        <item>Bosso</item>
+        <item>Brass</item>
+        <item>Buji</item>
+        <item>Bukkuyum</item>
+        <item>Buruku</item>
+        <item>Bungudu</item>
+        <item>Bunkure</item>
+        <item>Bunza</item>
+        <item>Burutu</item>
+        <item>Bwari</item>
+        <item>Calabar Municipal</item>
+        <item>Calabar South</item>
+        <item>Chanchaga</item>
+        <item>Charanchi</item>
+        <item>Chibok</item>
+        <item>Chikun</item>
+        <item>Dala</item>
+        <item>Damaturu</item>
+        <item>Damban</item>
+        <item>Dambatta</item>
+        <item>Damboa</item>
+        <item>Dandi</item>
+        <item>Dandume</item>
+        <item>Dange Shuni</item>
+        <item>Danja</item>
+        <item>Dan Musa</item>
+        <item>Darazo</item>
+        <item>Dass</item>
+        <item>Daura</item>
+        <item>Dawakin Kudu</item>
+        <item>Dawakin Tofa</item>
+        <item>Degema</item>
+        <item>Dekina</item>
+        <item>Demsa</item>
+        <item>Dikwa</item>
+        <item>Doguwa</item>
+        <item>Doma</item>
+        <item>Donga</item>
+        <item>Dukku</item>
+        <item>Dunukofia</item>
+        <item>Dutse</item>
+        <item>Dutsi</item>
+        <item>Dutsin Ma</item>
+        <item>Eastern Obolo</item>
+        <item>Ebonyi</item>
+        <item>Edati</item>
+        <item>Ede North</item>
+        <item>Ede South</item>
+        <item>Edu</item>
+        <item>Ife Central</item>
+        <item>Ife East</item>
+        <item>Ife North</item>
+        <item>Ife South</item>
+        <item>Efon</item>
+        <item>Yewa North</item>
+        <item>Yewa South</item>
+        <item>Egbeda</item>
+        <item>Egbedore</item>
+        <item>Egor</item>
+        <item>Ehime Mbano</item>
+        <item>Ejigbo</item>
+        <item>Ekeremor</item>
+        <item>Eket</item>
+        <item>Ekiti</item>
+        <item>Ekiti East</item>
+        <item>Ekiti South-West</item>
+        <item>Ekiti West</item>
+        <item>Ekwusigo</item>
+        <item>Eleme</item>
+        <item>Emuoha</item>
+        <item>Emure</item>
+        <item>Enugu East</item>
+        <item>Enugu North</item>
+        <item>Enugu South</item>
+        <item>Epe</item>
+        <item>Esan Central</item>
+        <item>Esan North-East</item>
+        <item>Esan South-East</item>
+        <item>Esan West</item>
+        <item>Ese Odo</item>
+        <item>Esit Eket</item>
+        <item>Essien Udim</item>
+        <item>Etche</item>
+        <item>Ethiope East</item>
+        <item>Ethiope West</item>
+        <item>Etim Ekpo</item>
+        <item>Etinan</item>
+        <item>Eti Osa</item>
+        <item>Etsako Central</item>
+        <item>Etsako East</item>
+        <item>Etsako West</item>
+        <item>Etung</item>
+        <item>Ewekoro</item>
+        <item>Ezeagu</item>
+        <item>Ezinihitte</item>
+        <item>Ezza North</item>
+        <item>Ezza South</item>
+        <item>Fagge</item>
+        <item>Fakai</item>
+        <item>Faskari</item>
+        <item>Fika</item>
+        <item>Fufure</item>
+        <item>Funakaye</item>
+        <item>Fune</item>
+        <item>Funtua</item>
+        <item>Gabasawa</item>
+        <item>Gada</item>
+        <item>Gagarawa</item>
+        <item>Gamawa</item>
+        <item>Ganjuwa</item>
+        <item>Ganye</item>
+        <item>Garki</item>
+        <item>Garko</item>
+        <item>Garun Mallam</item>
+        <item>Gashaka</item>
+        <item>Gassol</item>
+        <item>Gaya</item>
+        <item>Gayuk</item>
+        <item>Gezawa</item>
+        <item>Gbako</item>
+        <item>Gboko</item>
+        <item>Gbonyin</item>
+        <item>Geidam</item>
+        <item>Giade</item>
+        <item>Giwa</item>
+        <item>Gokana</item>
+        <item>Gombe</item>
+        <item>Gombi</item>
+        <item>Goronyo</item>
+        <item>Grie</item>
+        <item>Gubio</item>
+        <item>Gudu</item>
+        <item>Gujba</item>
+        <item>Gulani</item>
+        <item>Guma</item>
+        <item>Gumel</item>
+        <item>Gummi</item>
+        <item>Gurara</item>
+        <item>Guri</item>
+        <item>Gusau</item>
+        <item>Guzamala</item>
+        <item>Gwadabawa</item>
+        <item>Gwagwalada</item>
+        <item>Gwale</item>
+        <item>Gwandu</item>
+        <item>Gwaram</item>
+        <item>Gwarzo</item>
+        <item>Gwer East</item>
+        <item>Gwer West</item>
+        <item>Gwiwa</item>
+        <item>Gwoza</item>
+        <item>Hadejia</item>
+        <item>Hawul</item>
+        <item>Hong</item>
+        <item>Ibadan North</item>
+        <item>Ibadan North-East</item>
+        <item>Ibadan North-West</item>
+        <item>Ibadan South-East</item>
+        <item>Ibadan South-West</item>
+        <item>Ibaji</item>
+        <item>Ibarapa Central</item>
+        <item>Ibarapa East</item>
+        <item>Ibarapa North</item>
+        <item>Ibeju-Lekki</item>
+        <item>Ibeno</item>
+        <item>Ibesikpo Asutan</item>
+        <item>Ibi</item>
+        <item>Ibiono-Ibom</item>
+        <item>Idah</item>
+        <item>Idanre</item>
+        <item>Ideato North</item>
+        <item>Ideato South</item>
+        <item>Idemili North</item>
+        <item>Idemili South</item>
+        <item>Ido</item>
+        <item>Ido Osi</item>
+        <item>Ifako-Ijaiye</item>
+        <item>Ifedayo</item>
+        <item>Ifedore</item>
+        <item>Ifelodun</item>
+        <item>Ifelodun</item>
+        <item>Ifo</item>
+        <item>Igabi</item>
+        <item>Igalamela Odolu</item>
+        <item>Igbo Etiti</item>
+        <item>Igbo Eze North</item>
+        <item>Igbo Eze South</item>
+        <item>Igueben</item>
+        <item>Ihiala</item>
+        <item>Ihitte/Uboma</item>
+        <item>Ilaje</item>
+        <item>Ijebu East</item>
+        <item>Ijebu North</item>
+        <item>Ijebu North East</item>
+        <item>Ijebu Ode</item>
+        <item>Ijero</item>
+        <item>Ijumu</item>
+        <item>Ika</item>
+        <item>Ika North East</item>
+        <item>Ikara</item>
+        <item>Ika South</item>
+        <item>Ikeduru</item>
+        <item>Ikeja</item>
+        <item>Ikenne</item>
+        <item>Ikere</item>
+        <item>Ikole</item>
+        <item>Ikom</item>
+        <item>Ikono</item>
+        <item>Ikorodu</item>
+        <item>Ikot Abasi</item>
+        <item>Ikot Ekpene</item>
+        <item>Ikpoba Okha</item>
+        <item>Ikwerre</item>
+        <item>Ikwo</item>
+        <item>Ikwuano</item>
+        <item>Ila</item>
+        <item>Ilejemeje</item>
+        <item>Ile Oluji/Okeigbo</item>
+        <item>Ilesa East</item>
+        <item>Ilesa West</item>
+        <item>Illela</item>
+        <item>Ilorin East</item>
+        <item>Ilorin South</item>
+        <item>Ilorin West</item>
+        <item>Imeko Afon</item>
+        <item>Ingawa</item>
+        <item>Ini</item>
+        <item>Ipokia</item>
+        <item>Irele</item>
+        <item>Irepo</item>
+        <item>Irepodun</item>
+        <item>Irepodun</item>
+        <item>Irepodun/Ifelodun</item>
+        <item>Irewole</item>
+        <item>Isa</item>
+        <item>Ise/Orun</item>
+        <item>Iseyin</item>
+        <item>Ishielu</item>
+        <item>Isiala Mbano</item>
+        <item>Isiala Ngwa North</item>
+        <item>Isiala Ngwa South</item>
+        <item>Isin</item>
+        <item>Isi Uzo</item>
+        <item>Isokan</item>
+        <item>Isoko North</item>
+        <item>Isoko South</item>
+        <item>Isu</item>
+        <item>Isuikwuato</item>
+        <item>Itas/Gadau</item>
+        <item>Itesiwaju</item>
+        <item>Itu</item>
+        <item>Ivo</item>
+        <item>Iwajowa</item>
+        <item>Iwo</item>
+        <item>Izzi</item>
+        <item>Jaba</item>
+        <item>Jada</item>
+        <item>Jahun</item>
+        <item>Jakusko</item>
+        <item>Jalingo</item>
+        <item>Jama\'are</item>
+        <item>Jega</item>
+        <item>Jema\'a</item>
+        <item>Jere</item>
+        <item>Jibia</item>
+        <item>Jos East</item>
+        <item>Jos North</item>
+        <item>Jos South</item>
+        <item>Kabba/Bunu</item>
+        <item>Kabo</item>
+        <item>Kachia</item>
+        <item>Kaduna North</item>
+        <item>Kaduna South</item>
+        <item>Kafin Hausa</item>
+        <item>Kafur</item>
+        <item>Kaga</item>
+        <item>Kagarko</item>
+        <item>Kaiama</item>
+        <item>Kaita</item>
+        <item>Kajola</item>
+        <item>Kajuru</item>
+        <item>Kala/Balge</item>
+        <item>Kalgo</item>
+        <item>Kaltungo</item>
+        <item>Kanam</item>
+        <item>Kankara</item>
+        <item>Kanke</item>
+        <item>Kankia</item>
+        <item>Kano Municipal</item>
+        <item>Karasuwa</item>
+        <item>Karaye</item>
+        <item>Karim Lamido</item>
+        <item>Karu</item>
+        <item>Katagum</item>
+        <item>Katcha</item>
+        <item>Katsina</item>
+        <item>Katsina-Ala</item>
+        <item>Kaura</item>
+        <item>Kaura Namoda</item>
+        <item>Kauru</item>
+        <item>Kazaure</item>
+        <item>Keana</item>
+        <item>Kebbe</item>
+        <item>Keffi</item>
+        <item>Khana</item>
+        <item>Kibiya</item>
+        <item>Kirfi</item>
+        <item>Kiri Kasama</item>
+        <item>Kiru</item>
+        <item>Kiyawa</item>
+        <item>Kogi</item>
+        <item>Koko/Besse</item>
+        <item>Kokona</item>
+        <item>Kolokuma/Opokuma</item>
+        <item>Konduga</item>
+        <item>Konshisha</item>
+        <item>Kontagora</item>
+        <item>Kosofe</item>
+        <item>Kaugama</item>
+        <item>Kubau</item>
+        <item>Kudan</item>
+        <item>Kuje</item>
+        <item>Kukawa</item>
+        <item>Kumbotso</item>
+        <item>Kumi</item>
+        <item>Kunchi</item>
+        <item>Kura</item>
+        <item>Kurfi</item>
+        <item>Kusada</item>
+        <item>Kwali</item>
+        <item>Kwande</item>
+        <item>Kwami</item>
+        <item>Kware</item>
+        <item>Kwaya Kusar</item>
+        <item>Lafia</item>
+        <item>Lagelu</item>
+        <item>Lagos Island</item>
+        <item>Lagos Mainland</item>
+        <item>Langtang South</item>
+        <item>Langtang North</item>
+        <item>Lapai</item>
+        <item>Lamurde</item>
+        <item>Lau</item>
+        <item>Lavun</item>
+        <item>Lere</item>
+        <item>Logo</item>
+        <item>Lokoja</item>
+        <item>Machina</item>
+        <item>Madagali</item>
+        <item>Madobi</item>
+        <item>Mafa</item>
+        <item>Magama</item>
+        <item>Magumeri</item>
+        <item>Mai\'Adua</item>
+        <item>Maiduguri</item>
+        <item>Maigatari</item>
+        <item>Maiha</item>
+        <item>Maiyama</item>
+        <item>Makarfi</item>
+        <item>Makoda</item>
+        <item>Malam Madori</item>
+        <item>Malumfashi</item>
+        <item>Mangu</item>
+        <item>Mani</item>
+        <item>Maradun</item>
+        <item>Mariga</item>
+        <item>Makurdi</item>
+        <item>Marte</item>
+        <item>Maru</item>
+        <item>Mashegu</item>
+        <item>Mashi</item>
+        <item>Matazu</item>
+        <item>Mayo Belwa</item>
+        <item>Mbaitoli</item>
+        <item>Mbo</item>
+        <item>Michika</item>
+        <item>Miga</item>
+        <item>Mikang</item>
+        <item>Minjibir</item>
+        <item>Misau</item>
+        <item>Moba</item>
+        <item>Mobbar</item>
+        <item>Mubi North</item>
+        <item>Mubi South</item>
+        <item>Mokwa</item>
+        <item>Monguno</item>
+        <item>Mopa Muro</item>
+        <item>Moro</item>
+        <item>Moya</item>
+        <item>Mkpat-Enin</item>
+        <item>Musawa</item>
+        <item>Mushin</item>
+        <item>Nafada</item>
+        <item>Nangere</item>
+        <item>Nasarawa</item>
+        <item>Nasarawa</item>
+        <item>Nasarawa Egon</item>
+        <item>Ndokwa East</item>
+        <item>Ndokwa West</item>
+        <item>Nembe</item>
+        <item>Ngala</item>
+        <item>Nganzai</item>
+        <item>Ngaski</item>
+        <item>Ngor Okpala</item>
+        <item>Nguru</item>
+        <item>Ningi</item>
+        <item>Njaba</item>
+        <item>Njikoka</item>
+        <item>Nkanu East</item>
+        <item>Nkanu West</item>
+        <item>Nkwerre</item>
+        <item>Nnewi North</item>
+        <item>Nnewi South</item>
+        <item>Nsit-Atai</item>
+        <item>Nsit-Ibom</item>
+        <item>Nsit-Ubium</item>
+        <item>Nsukka</item>
+        <item>Numan</item>
+        <item>Nwangele</item>
+        <item>Obafemi Owode</item>
+        <item>Obanliku</item>
+        <item>Obi</item>
+        <item>Obi Ngwa</item>
+        <item>Obio/Akpor</item>
+        <item>Obokun</item>
+        <item>Obot Akara</item>
+        <item>Obowo</item>
+        <item>Obubra</item>
+        <item>Obudu</item>
+        <item>Odeda</item>
+        <item>Odigbo</item>
+        <item>Odogbolu</item>
+        <item>Odo Otin</item>
+        <item>Odukpani</item>
+        <item>Offa</item>
+        <item>Ofu</item>
+        <item>Ogba/Egbema/Ndoni</item>
+        <item>Ogbadibo</item>
+        <item>Ogbaru</item>
+        <item>Ogbia</item>
+        <item>Ogbomosho North</item>
+        <item>Ogbomosho South</item>
+        <item>Ogu/Bolo</item>
+        <item>Ogoja</item>
+        <item>Ogo Oluwa</item>
+        <item>Ogori/Magongo</item>
+        <item>Ogun Waterside</item>
+        <item>Oguta</item>
+        <item>Ohafia</item>
+        <item>Ohaji/Egbema</item>
+        <item>Ohaozara</item>
+        <item>Ohaukwu</item>
+        <item>Ohimini</item>
+        <item>Orhionmwon</item>
+        <item>Oji River</item>
+        <item>Ojo</item>
+        <item>Oju</item>
+        <item>Okehi</item>
+        <item>Okene</item>
+        <item>Oke Ero</item>
+        <item>Okigwe</item>
+        <item>Okitipupa</item>
+        <item>Okobo</item>
+        <item>Okpe</item>
+        <item>Okrika</item>
+        <item>Olamaboro</item>
+        <item>Ola Oluwa</item>
+        <item>Olorunda</item>
+        <item>Olorunsogo</item>
+        <item>Oluyole</item>
+        <item>Omala</item>
+        <item>Omuma</item>
+        <item>Ona Ara</item>
+        <item>Ondo East</item>
+        <item>Ondo West</item>
+        <item>Onicha</item>
+        <item>Onitsha North</item>
+        <item>Onitsha South</item>
+        <item>Onna</item>
+        <item>Okpokwu</item>
+        <item>Opobo/Nkoro</item>
+        <item>Oredo</item>
+        <item>Orelope</item>
+        <item>Oriade</item>
+        <item>Ori Ire</item>
+        <item>Orlu</item>
+        <item>Orolu</item>
+        <item>Oron</item>
+        <item>Orsu</item>
+        <item>Oru East</item>
+        <item>Oruk Anam</item>
+        <item>Orumba North</item>
+        <item>Orumba South</item>
+        <item>Oru West</item>
+        <item>Ose</item>
+        <item>Oshimili North</item>
+        <item>Oshimili South</item>
+        <item>Oshodi-Isolo</item>
+        <item>Osisioma</item>
+        <item>Osogbo</item>
+        <item>Oturkpo</item>
+        <item>Ovia North-East</item>
+        <item>Ovia South-West</item>
+        <item>Owan East</item>
+        <item>Owan West</item>
+        <item>Owerri Municipal</item>
+        <item>Owerri North</item>
+        <item>Owerri West</item>
+        <item>Owo</item>
+        <item>Oye</item>
+        <item>Oyi</item>
+        <item>Oyigbo</item>
+        <item>Oyo West</item>
+        <item>Oyo East</item>
+        <item>Oyun</item>
+        <item>Paikoro</item>
+        <item>Pankshin</item>
+        <item>Patani</item>
+        <item>Pategi</item>
+        <item>Port Harcourt</item>
+        <item>Potiskum</item>
+        <item>Qua\'an Pan</item>
+        <item>Rabah</item>
+        <item>Rafi</item>
+        <item>Rano</item>
+        <item>Remo North</item>
+        <item>Rijau</item>
+        <item>Rimi</item>
+        <item>Rimin Gado</item>
+        <item>Ringim</item>
+        <item>Riyom</item>
+        <item>Rogo</item>
+        <item>Roni</item>
+        <item>Sabon Birni</item>
+        <item>Sabon Gari</item>
+        <item>Sabuwa</item>
+        <item>Safana</item>
+        <item>Sagbama</item>
+        <item>Sakaba</item>
+        <item>Saki East</item>
+        <item>Saki West</item>
+        <item>Sandamu</item>
+        <item>Sanga</item>
+        <item>Sapele</item>
+        <item>Sardauna</item>
+        <item>Shagamu</item>
+        <item>Shagari</item>
+        <item>Shanga</item>
+        <item>Shani</item>
+        <item>Shanono</item>
+        <item>Shelleng</item>
+        <item>Shendam</item>
+        <item>Shinkafi</item>
+        <item>Shira</item>
+        <item>Shiroro</item>
+        <item>Shongom</item>
+        <item>Shomolu</item>
+        <item>Silame</item>
+        <item>Soba</item>
+        <item>Sokoto North</item>
+        <item>Sokoto South</item>
+        <item>Song</item>
+        <item>Southern Ijaw</item>
+        <item>Suleja</item>
+        <item>Sule Tankarkar</item>
+        <item>Sumaila</item>
+        <item>Suru</item>
+        <item>Surulere</item>
+        <item>Tafa</item>
+        <item>Tafawa Balewa</item>
+        <item>Tai</item>
+        <item>Takai</item>
+        <item>Takum</item>
+        <item>Talata Mafara</item>
+        <item>Tambuwal</item>
+        <item>Tangaza</item>
+        <item>Tarauni</item>
+        <item>Tarka</item>
+        <item>Tarmuwa</item>
+        <item>Taura</item>
+        <item>Toungo</item>
+        <item>Tofa</item>
+        <item>Toro</item>
+        <item>Toto</item>
+        <item>Chafe</item>
+        <item>Tsanyawa</item>
+        <item>Tudun Wada</item>
+        <item>Tureta</item>
+        <item>Udenu</item>
+        <item>Udi</item>
+        <item>Udu</item>
+        <item>Udung-Uko</item>
+        <item>Ughelli North</item>
+        <item>Ughelli South</item>
+        <item>Ugwunagbo</item>
+        <item>Uhunmwonde</item>
+        <item>Ukanafun</item>
+        <item>Ukum</item>
+        <item>Ukwa East</item>
+        <item>Ukwa West</item>
+        <item>Ukwuani</item>
+        <item>Umuahia North</item>
+        <item>Umuahia South</item>
+        <item>Umu Nneochi</item>
+        <item>Ungogo</item>
+        <item>Unuimo</item>
+        <item>Uruan</item>
+        <item>Urue-Offong/Oruko</item>
+        <item>Ushongo</item>
+        <item>Ussa</item>
+        <item>Uvwie</item>
+        <item>Uyo</item>
+        <item>Uzo-Uwani</item>
+        <item>Vandeikya</item>
+        <item>Wamako</item>
+        <item>Wamba</item>
+        <item>Warawa</item>
+        <item>Warji</item>
+        <item>Warri North</item>
+        <item>Warri South</item>
+        <item>Warri South West</item>
+        <item>Wasagu/Danko</item>
+        <item>Wase</item>
+        <item>Wudil</item>
+        <item>Wukari</item>
+        <item>Wurno</item>
+        <item>Wushishi</item>
+        <item>Yabo</item>
+        <item>Yagba East</item>
+        <item>Yagba West</item>
+        <item>Yakuur</item>
+        <item>Obi</item>
+        <item>Obi Ngwa</item>
+        <item>Obio/Akpor</item>
+        <item>Obokun</item>
+        <item>Obot Akara</item>
+        <item>Obowo</item>
+        <item>Obubra</item>
+        <item>Yala</item>
+        <item>Yamaltu/Deba</item>
+        <item>Yankwashi</item>
+        <item>Yauri</item>
+        <item>Yenagoa</item>
+        <item>Yola North</item>
+        <item>Yola South</item>
+        <item>Yorro</item>
+        <item>Yusufari</item>
+        <item>Zaki</item>
+        <item>Zango</item>
+        <item>Zangon Kataf</item>
+        <item>Zaria</item>
+        <item>Zing</item>
+        <item>Zurmi</item>
+        <item>Zuru</item>
+    </string-array>
+
+</resources>

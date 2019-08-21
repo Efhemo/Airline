@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.constraintlayout.ConstraintLayout
+                android:id="@+id/wrap_constr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:layout_marginTop="45dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:id="@+id/origin"
+                    android:padding="@dimen/dimen_8"
+                    android:background="@drawable/border_layer_list"
+                    android:hint="@string/airport_origin"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"/>
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    app:srcCompat="@drawable/orides"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:layout_marginBottom="@dimen/dimen_8"
+                    app:layout_constraintRight_toLeftOf="@id/origin"
+                    app:layout_constraintTop_toTopOf="@id/origin"
+                    android:layout_marginRight="@dimen/dimen_8"
+                    app:layout_constraintBottom_toBottomOf="@id/dest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_16"/>
+
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/dest"
+                    android:padding="@dimen/dimen_8"
+                    android:layout_marginTop="45dp"
+                    app:layout_constraintLeft_toLeftOf="@id/origin"
+                    app:layout_constraintTop_toBottomOf="@id/origin"
+                    app:layout_constraintRight_toRightOf="@id/origin"
+                    android:background="@drawable/border_layer_list"
+                    android:hint="@string/airport_destination"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"/>
+
+
+            <androidx.cardview.widget.CardView
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/dest"
+                    app:layout_constraintBottom_toBottomOf="@id/dest"
+                    app:layout_constraintLeft_toRightOf="@id/dest"
+                    android:id="@+id/search_btn"
+                    app:cardElevation="8dp"
+                    android:padding="@dimen/dimen_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="45dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/btn"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:background="@drawable/circular_border"
+                        app:srcCompat="@drawable/ic_keyboard_tab"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.ConstraintLayout>
+
+        <include
+                android:id="@+id/bottom_sheet_header"
+                layout="@layout/fragment_tags"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
