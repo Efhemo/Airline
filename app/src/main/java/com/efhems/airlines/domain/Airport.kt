@@ -1,52 +1,25 @@
 package com.efhems.airlines.domain
 
 import androidx.annotation.NonNull
-import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-
+/**
+ * Data class for airport.
+ */
 @Entity
 data class Airport(
+
+    /**
+     * 3-letter code for the airport. name is unique
+    * */
     @PrimaryKey
     @NonNull
     var name: String,
+    /**
+     * latitude and longitude coordinate for this airport
+    * */
     val latitude: Long,
-
-
-    val longitude: Long)
-
-/*data class Flight(
-    @Json(name = "AirportResource")
-    val airports: Airports
-)
-
-data class Airports(
-    @Json(name = "Airports")
-    val airport: Airport
-)
-
-data class AllAirport(
-    @Json(name = "AirportCode")
-    val airportCode: String,
-    @Json(name = "Position")
-    val position: Position
-)
-
-data class Airport(
-    @Json(name = "Airport")
-    val airport: List<AllAirport>
-)
-
-data class Position(
-    @Json(name = "Coordinate")
-    val coordinate: Coordinate
-)
-
-data class Coordinate(
-    @Json(name = "Latitude")
-    val latitude: Double,
-    @Json(name = "Longitude")
-    val longitude: Double
-)*/
-
+    val longitude: Long,
+    val nextLink: String
+    )

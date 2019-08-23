@@ -11,13 +11,18 @@ import android.widget.TextView
 import com.efhems.airlines.R
 import com.efhems.airlines.domain.Airport
 
-
-class CustomListAdapter(context: Context, val resource: Int,
+/**
+ * Custome Adapter for autocompeleTextView
+ */
+class CustomListAdapter(context: Context, private val resource: Int,
                         private var storeDataLst: List<Airport>?): ArrayAdapter<Airport>(context, resource, storeDataLst!!){
 
     val listFilter: ListFilter = ListFilter()
     private var dataListAllItems: List<Airport>? = null
 
+    /**
+    *@Returns How many items are in the data set represented by this Adapter.
+    */
     override fun getCount(): Int {
         return storeDataLst!!.size
     }
@@ -30,6 +35,9 @@ class CustomListAdapter(context: Context, val resource: Int,
         return storeDataLst!![position]
     }
 
+    /**
+     * Get a View that displays the data at the specified position in the data set.
+     * */
     override fun getView(position: Int, view: View?, parent: ViewGroup): View {
         var view1 = view
 
@@ -43,17 +51,22 @@ class CustomListAdapter(context: Context, val resource: Int,
         return view1
     }
 
-
+    /**
+     * Returns a filter that can be used to constrain data with a filtering pattern.
+     * */
     override fun getFilter(): Filter {
         return listFilter
     }
 
+    /**
+     * inner class that filter result as user is typing
+     * */
    inner class ListFilter: Filter() {
 
         private val lock = Any()
         override fun performFiltering(p0: CharSequence?): FilterResults {
 
-            val results = Filter.FilterResults()
+            val results = FilterResults()
             if (dataListAllItems == null) {
                 synchronized(lock) {
                     dataListAllItems = ArrayList(storeDataLst!!)

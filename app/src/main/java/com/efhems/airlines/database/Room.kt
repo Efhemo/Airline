@@ -7,17 +7,20 @@ import androidx.room.RoomDatabase
 import com.efhems.airlines.domain.Airport
 
 @Database(entities = [Airport::class], version = 1)
-abstract class FootballDatabase : RoomDatabase() {
+abstract class AirlineDatabase : RoomDatabase() {
     abstract val dao: Dao
 }
 
-private lateinit var INSTANCE: FootballDatabase
-fun getDatabase(context: Context): FootballDatabase {
-    synchronized(FootballDatabase::class.java) {
+/**
+ * create an singleton instance of database
+ * */
+private lateinit var INSTANCE: AirlineDatabase
+fun getDatabase(context: Context): AirlineDatabase {
+    synchronized(AirlineDatabase::class.java) {
         if (!::INSTANCE.isInitialized) {
             INSTANCE = Room.databaseBuilder(
                 context.applicationContext,
-                FootballDatabase::class.java, "Replace with actual Db Name"
+                AirlineDatabase::class.java, "Replace with actual Db Name"
             ).build()
         }
     }

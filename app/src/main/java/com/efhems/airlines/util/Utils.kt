@@ -8,11 +8,29 @@ import com.efhems.airlines.domain.Airport
 import com.efhems.airlines.domain.Schedule
 import org.json.JSONObject
 
+/**
+ * Method for extracting Airpot
+ * */
 fun extractAirports(x: String): List<Airport> {
 
     val airports = ArrayList<Airport>()
 
-    val jsonAirports = JSONObject(x).getJSONObject("AirportResource").getJSONObject("Airports").getJSONArray("Airport")
+    val jsonAirportResource = JSONObject(x).getJSONObject("AirportResource")
+
+    val jsonAirports = jsonAirportResource.getJSONObject("Airports").getJSONArray("Airport")
+
+    val links = jsonAirportResource.getJSONObject("Meta").getJSONArray("Link")
+
+    var nextLink = ""
+
+    for (i in 0 until links.length()){
+        val isNext = links.getJSONObject(i).getString("@Rel")
+
+        if(isNext == "next"){
+           nextLink = links.getJSONObject(i).getString("@Href")
+        }
+    }
+
 
     for (i in 0 until jsonAirports.length()) {
         val airport = jsonAirports.getJSONObject(i)
@@ -23,13 +41,17 @@ fun extractAirports(x: String): List<Airport> {
             Airport(
                 airport.getString("AirportCode"),
                 coordinate.getLong("Latitude"),
-                coordinate.getLong("Longitude")
+                coordinate.getLong("Longitude"),
+                nextLink
             )
         )
     }
     return airports
 }
 
+/**
+ * Method for extracting Schedules
+ * */
 fun extractSchedule(x: String): List<Schedule> {
 
     val schedules = ArrayList<Schedule>()
@@ -39,12 +61,10 @@ fun extractSchedule(x: String): List<Schedule> {
         val jsonSchedule = JSONObject(x).getJSONObject("ScheduleResource").getJSONObject("Schedule")
         val schedule = schedule(jsonSchedule)
 
-        Log.i("Valueing", "value 1")
         schedules.add(schedule)
 
     } else {
 
-        Log.i("Valueing", "value 1")
 
         for (i in 0 until jsonAirports.length()) {
             val airport = jsonAirports.getJSONObject(i)
@@ -67,7 +87,6 @@ private fun schedule(airport: JSONObject): Schedule {
     val flightNumber = coordinate.getJSONObject("MarketingCarrier").getLong("FlightNumber")
     val daysOfOperation = coordinate.getJSONObject("Details").getLong("DaysOfOperation")
 
-    Log.i("Valueing", "value $dDateTimme $aDateTimme $flightNumber $daysOfOperation")
     val schedule = Schedule(dDateTimme, aDateTimme, flightNumber, daysOfOperation)
     return schedule
 }
@@ -87,8 +106,6 @@ fun timeDifference(start: Time, stop: Time): Time {
     }
     diff.minutes = start.minutes - stop.minutes
     diff.hours = start.hours - stop.hours
-
-    //print("= ${diff.hours}:${diff.minutes}:${diff.seconds}")
 
     return diff
 }

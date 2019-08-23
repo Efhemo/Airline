@@ -5,8 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
 >
 
-
-    <androidx.constraintlayout.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/bottom_sheet"
             android:layout_width="match_parent"
             android:layout_height="350dp"
@@ -43,7 +42,8 @@
                     android:id="@+id/dismiss_dialog"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/cross_multiply_38"/>
+                    android:src="@drawable/cross_multiply_38"
+                    android:contentDescription="@string/close_bottom_sheet"/>
 
         </LinearLayout>
 
@@ -62,7 +62,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 android:id="@+id/spin_kit"
-                style="@style/SpinKitView.Large.MultiplePulseRing"
+                style="@style/SpinKitView.Large.ThreeBounce"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -79,34 +79,5 @@
                 app:layout_constraintTop_toBottomOf="@id/line"/>
 
 
-        <!--<LinearLayout
-            android:id="@+id/empty_linear_layoutView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/bottom_sheet_header">
-
-            <ImageView
-                android:id="@+id/imageViewEmpty"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/ic_rabbit" />
-
-            <TextView
-                android:id="@+id/tv_message"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="@dimen/dimen_16"
-                android:drawableRight="@drawable/ic_refresh"
-                android:gravity="center"
-                android:text="@string/nothing_is_here_nretry"
-                android:textColor="@android:color/darker_gray" />
-        </LinearLayout>-->
-    </androidx.constraintlayout.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

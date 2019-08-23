@@ -1,7 +1,6 @@
 package com.efhems.airlines.ui
 
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,6 +11,9 @@ import com.efhems.airlines.R
 import com.efhems.airlines.domain.Schedule
 import kotlinx.android.synthetic.main.schedules_item.view.*
 
+/**
+ * Recyclerview Adapter setUp
+ * */
 class ScheduleRCAdapter(val onScheduleClick: OnScheculeClickListener) :
     ListAdapter<Schedule, ScheduleRCAdapter.ItemViewholder>(DiffCallback()) {
 
@@ -36,8 +38,6 @@ class ScheduleRCAdapter(val onScheduleClick: OnScheculeClickListener) :
             this.time.text = item.departureTime.substring(11, 16)
             this.flight_no.text = item.flightNumber.toString()
 
-
-            Log.i("Recyclerview ", "size value is ${item.flightNumber}")
             setOnClickListener {
                 onScheduleClick.onClick(item)
             }
